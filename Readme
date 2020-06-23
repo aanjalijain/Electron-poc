@@ -1,0 +1,5 @@
+---Note----
+
+1) There is one request_Api.js file which could also be used for api consuming and without hitting the browser(app.listen()).
+2)Packing as a exe could be found in below path:-
+    "\electron_poc\src\main\electron\demo-app-win32-x64"
