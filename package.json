@@ -1,0 +1,21 @@
+{
+ "name": "demo-app",
+ "version": "0.1.0",
+ "main": "main.js",
+ "dependencies": {
+  "express": "^4.17.1",
+  "http": "0.0.1-security",
+  "minimal-request-promise": "^1.5.0",
+  "net": "^1.0.2",
+  "server": "^1.0.29",
+  "tree-kill": "^1.2.0"
+ },
+ "scripts": {
+  "start": "electron ."
+ },
+ "devDependencies": {
+  "electron": "^9.0.4",
+  "electron-packager": "^14.2.1",
+  "request": "^2.88.2"
+ }
+}
