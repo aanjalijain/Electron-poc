@@ -1,0 +1,16 @@
+1)Install Package(globally):
+npm install -g  electron-packager --save-dev
+2)Check in package.json that electron is in devDependencies or in dependencies(It should be in devDependencies) if not execute the below command:-
+WARNING: Found 'electron' but not as a devDependency, pruning anyway rcedit.exe failed with exit code 1. Fatal error: Unable to commit changes
+ 
+npm install --save-dev electron
+3)To create package command to be executed is:-
+electron-packager .
+4)If packaging fails and following warning is send
+rcedit.exe failed with exit code 1
+try executng below command:-
+ 
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+You have to set your execution policy to Unrestricted not RemoteSigned. According to Set-ExecutionPolicy:
+RemoteSigned. Requires that all scripts and configuration files downloaded from the Internet are signed by a trusted publisher. 
+The default execution policy for Windows server computers.
